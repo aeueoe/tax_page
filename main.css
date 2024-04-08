@@ -11,35 +11,6 @@ body {
   margin: 0 auto;
 }
 
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: var(--dark-green);
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 24px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: var(--dark-green);
-  color: #fff;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
 /* Nabar */
 .navbar-logo {
   max-height: 40px;
@@ -363,6 +334,13 @@ body {
 footer ul a {
   color: var(--dark-green);
   text-decoration: none;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: none;
+  color: var(--dark-green);
 }
 
 @media (min-width: 992px) {

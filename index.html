@@ -401,6 +401,9 @@
           <p class="text-center mt-3" style="font-size: small;">Copyright © 2024 TaxPro. All rights reserved.</p>
         </div>
       </div>
+      <button type="button" class="btn btn-floating btn-xl" id="btn-back-to-top">
+        <i class="bi bi-arrow-up-circle-fill" style="font-size: 2rem;"></i>
+      </button>
     </footer>
   </main>
 
@@ -408,18 +411,39 @@
   <script>
     function closeNavbar() {
       if (window.innerWidth <= 992) {
-        // Close navbar when a link is clicked on smaller screens
         var navbarToggler = document.querySelector('.navbar-toggler');
         if (navbarToggler.getAttribute('aria-expanded') === 'true') {
-          navbarToggler.click(); // Simulate toggler click to close navbar
+          navbarToggler.click();
         }
       }
     }
   </script>
 
+  <script>let mybutton = document.getElementById("btn-back-to-top");
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }</script>
+
+
 </body>
-
-
-
 
 </html>
