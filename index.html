@@ -8,14 +8,16 @@
   <meta property="og:site_name" content="TaxPro">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en">
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lexend:wght@300;400;500&display=swap");
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="main.css" />
   <script defer src="app.js"></script>
   <title>TaxPro - Elevating Mobility Tax</title>
@@ -40,7 +42,7 @@
       <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
         <ul class="navbar-nav d-flex align-items-end ">
           <li class="nav-item">
-            <a class="nav-link" href="#primary-features__section" onclick="closeNavbar()">Features</a>
+            <a class="nav-link" href="#primary-features" onclick="closeNavbar()">Features</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#testmonials__section" onclick="closeNavbar()">Testimonials</a>
@@ -85,740 +87,339 @@
           </div>
         </div>
 
-        <div class="col-lg-7 d-lg-flex flex-lg-column order-1 order-lg-1">
+        <div class="col-lg-7 d-lg-flex flex-lg-column order-2 order-lg-1">
 
           <img src="assets/header-1.png" class="img-fluid" alt="save money"
             style="max-width: 100%; height: auto; width: 100%;">
         </div>
       </div>
     </div>
+  </section>
+  <section id="clients" class="clients">
+    <div class="container">
+      <h3 class="text-center py-3">
+        Trusted by
+      </h3>
+      <div class="row">
 
+        <div class="col-lg-2 col-md-4 col-6">
+          <img src="assets/clients/client-1.png" class="img-fluid">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <img src="assets/clients/client-2.png" class="img-fluid">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <img src="assets/clients/client-3.png" class="img-fluid">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <img src="assets/clients/client-4.png" class="img-fluid">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <img src="assets/clients/client-5.png" class="img-fluid">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <img src="assets/clients/client-6.png" class="img-fluid">
+        </div>
+
+      </div>
+
+    </div>
   </section>
 
   <main>
-    <section id="primary-features__section">
-      <img src="assets/primary features/background-features-2.jpg"
-        class="absolute top-1/2 left-1/2 max-w-none translate-x-[-44%] translate-y-[-42%] z-0" width="2245"
-        height="1636" />
-      <div class="c-flex-center flex-col w-full max-w-7xl mx-auto relative z-10">
-        <div class="c-section__header">
-          <h1 class="text-white">Everything you need to run your books.</h1>
-          <p class="text-slate-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
-          </p>
+    <section id="primary-features">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1>Everything compliance-related in one place</h1>
+          <p>We handle all mobility tax compliance for your employees at a fair and transparent price. Whether its tax
+            returns,
+            payroll or tax advice.</p>
         </div>
-        <div class="c-flex-justify-center flex-col w-screen sm:w-full lg:grid lg:grid-cols-12">
-          <div class="relative w-full lg:col-span-5">
-            <div class="c-primary-features__section__tabs w-full left-0 top-[5.25rem] flex lg:absolute lg:flex-col">
-              <div class="c-primary-features__section__tab-wrapper c-active" data-index="0">
-                <h3>Payroll</h3>
-                <p>
-                  Keep track of everyone's salaries and whether or not they've
-                  been paid. Direct deposit not supported.
-                </p>
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <div class="feature-card">
+              <img src="assets/primary features/payroll.png" class="img-fluid" alt="Payroll">
+              <div class="card-body">
+                <h3 class="card-title">Payroll</h3>
+                <p class="card-text">Keep track of everyone's salaries and whether or not they've been
+                  paid. Direct deposit not supported.</p>
               </div>
-              <div class="c-primary-features__section__tab-wrapper" data-index="1">
-                <h3>Claim expenses</h3>
-                <p>
-                  All of your receipts organized into one place, as long as
-                  you don't mind typing in the data by hand.
-                </p>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="feature-card">
+              <img src="assets/primary features/expenses.png" class="img-fluid" alt="Expenses">
+              <div class="card-body">
+                <h3 class="card-title">Claim Expenses</h3>
+                <p class="card-text">Organize all your receipts into one place, as long as you don't mind
+                  typing in the data by hand.</p>
               </div>
-              <div class="c-primary-features__section__tab-wrapper" data-index="2">
-                <h3>VAT handling</h3>
-                <p>
-                  We only sell our software to companies who don't deal with
-                  VAT at all, so technically we do all the VAT stuff they
-                  need.
-                </p>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="feature-card">
+              <img src="assets/primary features/vat-returns.png" class="img-fluid" alt="VAT">
+              <div class="card-body">
+                <h3 class="card-title">VAT Handling</h3>
+                <p class="card-text">We handle VAT for companies who don't deal with VAT at all.</p>
               </div>
-              <div class="c-primary-features__section__tab-wrapper" data-index="3">
-                <h3>Reporting</h3>
-                <p>
-                  Easily export your data into an Excel spreadsheet where you
-                  can do whatever the hell you want with it
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="feature-card">
+              <img src="assets/primary features/reporting.png" class="img-fluid" alt="Reporting">
+              <div class="card-body">
+                <h3 class="card-title">Reporting</h3>
+                <p class="card-text">Easily export your data into Excel and analyze it however you want.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features" class="py-5"
+      style="background-image: url('./assets/primary features/background-features-1.jpg');">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2>Simplify everyday business tasks</h2>
+
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="card feature-card">
+              <img src="assets/secondary features/profit-loss.webp" class="card-img-top" alt="Reporting">
+              <div class="card-body">
+                <h5 class="card-title">Reporting</h5>
+                <p class="card-text">
+                  Stay on top of things with always up-to-date reporting features.
                 </p>
               </div>
             </div>
-            <div
-              class="c-primary-features__section__list-items w-full relative px-8 pb-14 pt-4 z-10 sm:pt-12 sm:px-6 lg:hidden">
-              <div
-                class="absolute z-[1] left-0 top-0 w-screen h-[64rem] bg-white/10 ring-1 ring-inset ring-white/10 inset-x-0 rounded-t-xl sm:left-0 sm:w-full sm:top-[0.75rem] sm:h-full">
-              </div>
+          </div>
 
-              <div class="c-flex-center flex-col gap-y-10 relative z-10">
-                <ul
-                  class="c-flex-items-center justify-start flex-nowrap gap-x-4 w-full py-4 overflow-x-auto sm:justify-center sm:py-0">
-                  <li class="c-active" data-index="0">Payroll</li>
-                  <li data-index="1">Claim expenses</li>
-                  <li data-index="2">VAT handling</li>
-                  <li data-index="3">Reporting</li>
+
+          <div class="col-lg-4">
+            <div class="card feature-card">
+              <img src="assets/secondary features/inventory.webp" class="card-img-top" alt="Inventory">
+              <div class="card-body">
+                <h5 class="card-title">Inventory</h5>
+                <p class="card-text">
+                  Never lose track of what’s in stock with accurate inventory tracking.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card feature-card">
+              <img src="assets/secondary features/contacts.webp" class="card-img-top" alt="Contacts">
+              <div class="card-body">
+                <h5 class="card-title">Contacts</h5>
+                <p class="card-text">
+                  Organize all of your contacts, service providers, and invoices in one place.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="testimonials-clean">
+
+      <div class="container">
+        <div class="intro">
+          <h2 class="text-center" style="color: rgb(63, 147, 68);">Loved by businesses worldwide </h2>
+        </div>
+        <div class="row people">
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <p class="description">Went super fast... easy to understand...👍</p>
+            </div>
+            <div class="author"><img class="rounded-circle" src="assets/testimonials/avatar-3.webp">
+              <h5 class="name">Ben Johnson</h5>
+              <p class="title">CEO of Company Inc.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <p class="description">The app is good for the simple tax return, I am very satisfied.</p>
+            </div>
+            <div class="author"><img class="rounded-circle" src="assets/testimonials/avatar-5.webp">
+              <h5 class="name">Carl Kent</h5>
+              <p class="title">Founder of Style Co.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <p class="description">Thank you very much for this app - fast, uncomplicated and a wonderful support.😎
+                👏</p>
+            </div>
+            <div class="author"><img class="rounded-circle" src="assets/testimonials/avatar-2.webp">
+              <h5 class="name">Emily Clark</h5>
+              <p class="title">Owner of Creative Ltd.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="price py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1>Affordable and transparent</h1>
+        </div>
+
+        <div class=" row justify-content-center">
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body ">
+                <h1 class="mb-4">€9</h1>
+                <h3 class="mb-3" style=" font-weight: 600;">Starter</h3>
+                <p class="mb-4 text-center" style="color: #001524; font-weight: 600;">Good for anyone who is
+                  self-employed and
+                  just
+                  getting started.</p>
+                <a href="#" class="btn-more">Select plan</a>
+                <ul class="mt-4 text-left list-unstyled">
+                  <li><i class="bi bi-check-circle"></i> Send 10 quotes and invoices</li>
+                  <li><i class="bi bi-check-circle"></i> Connect up to 2 bank accounts</li>
+                  <li><i class="bi bi-check-circle"></i> Track up to 15 expenses per month</li>
+                  <li><i class="bi bi-check-circle"></i> Manual payroll support</li>
+                  <li>
+                    <i class="bi bi-check-circle"></i> Export up to 3 reports
+                  </li>
                 </ul>
-                <div class="-mt-[2.25rem] sm:-mt-[1.5rem]">
-                  <p
-                    class="text-[1.065rem] text-start leading-relaxed mt-4 tracking-tight text-slate-100 max-w-max sm:max-w-lg sm:text-center">
-                    Keep track of everyone's salaries and whether or not
-                    they've been paid. Direct deposit not supported.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
-          <div
-            class="c-primary-features__section__img__wrapper relative left-14 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 -mt-[1rem] sm:w-fit sm:left-0 md:mt-0 lg:col-span-7 lg:w-[67.8125rem]">
-            <img src="assets/primary features/payroll.png" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="secondary-features__section" class="bg-white">
-      <div class="c-section__header">
-        <h1 class="text-slate-900">Simplify everyday business tasks.</h1>
-        <p class="text-slate-600">
-          Because you’d probably be a little confused if we suggested you
-          complicate your everyday business tasks instead.
-        </p>
-      </div>
-      <div class="c-flex-items-center flex-col w-full">
-        <div class="w-full xl:max-w-7xl">
-          <div
-            class="c-secondary-features__section__tabs grid items-baseline justify-center grid-flow-row gap-x-14 gap-y-16 lg:grid-rows-1 lg:grid-cols-3">
-            <div class="c-secondary-features__section__tab__wrapper c-active" data-position="0">
-              <span>
-                <svg aria-hidden="true" class="h-9 w-9" fill="none">
-                  <defs>
-                    <linearGradient id=":Rardm:" x1="11.5" y1="18" x2="36" y2="15.5" gradientUnits="userSpaceOnUse">
-                      <stop offset=".194" stop-color="#fff"></stop>
-                      <stop offset="1" stop-color="#6692F1"></stop>
-                    </linearGradient>
-                  </defs>
-                  <path d="m30 15-4 5-4-11-4 18-4-11-4 7-4-5" stroke="url(#:Rardm:)" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </span>
-              <h3>Reporting</h3>
-              <h5>
-                Stay on top of things with always up-to-date reporting
-                features.
-              </h5>
-              <p>
-                We talked about reporting in the section above but we needed
-                three items here, so mentioning it one more time for
-                posterity.
-              </p>
-            </div>
-            <div class="c-secondary-features__section__tab__wrapper" data-position="1">
-              <span>
-                <svg aria-hidden="true" class="h-9 w-9" fill="none">
-                  <path opacity=".5" d="M8 17a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
-                    fill="#fff"></path>
-                  <path opacity=".3" d="M8 24a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z"
-                    fill="#fff"></path>
-                  <path d="M8 10a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2Z" fill="#fff">
-                  </path>
-                </svg>
-              </span>
-              <h3>Inventory</h3>
-              <h5>
-                Never lose track of what’s in stock with accurate inventory
-                tracking.
-              </h5>
-              <p>
-                We don’t offer this as part of our software but that statement
-                is inarguably true. Accurate inventory tracking would help you
-                for sure.
-              </p>
-            </div>
-            <div class="c-secondary-features__section__tab__wrapper" data-position="2">
-              <span>
-                <svg aria-hidden="true" class="h-9 w-9" fill="none">
-                  <path opacity=".5"
-                    d="M25.778 25.778c.39.39 1.027.393 1.384-.028A11.952 11.952 0 0 0 30 18c0-6.627-5.373-12-12-12S6 11.373 6 18c0 2.954 1.067 5.659 2.838 7.75.357.421.993.419 1.384.028.39-.39.386-1.02.036-1.448A9.959 9.959 0 0 1 8 18c0-5.523 4.477-10 10-10s10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33c-.35.427-.354 1.058.036 1.448Z"
-                    fill="#fff"></path>
-                  <path
-                    d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
-                    fill="#fff"></path>
-                </svg>
-              </span>
-              <h3>Contacts</h3>
-              <h5>
-                Organize all of your contacts, service providers, and invoices
-                in one place.
-              </h5>
-              <p>
-                This also isn’t actually a feature, it’s just some friendly
-                advice. We definitely recommend that you do this, you’ll feel
-                really organized and professional.
-              </p>
-            </div>
-          </div>
-          <div
-            class="c-secondary-features__section__imgs__container w-full mt-24 overflow-hidden rounded-3xl inset-0 bg-slate-200 px-14 py-16 xl:px-16">
-            <div
-              class="c-secondary-features__section__imgs w-full grid grid-flow-col-dense justify-start items-center gap-x-12 translate-x-0">
-              <div class="c-active">
-                <img src="assets/secondary features/profit-loss.webp" />
-              </div>
-              <div>
-                <img src="assets/secondary features/inventory.webp" />
-              </div>
-              <div>
-                <img src="assets/secondary features/contacts.webp" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="get-started__section" class="bg-blue-600 py-16 md:py-32">
-      <img src="assets/primary features/background-features-1.jpg"
-        class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 z-0" width="2347" height="1244" />
-      <div class="c-flex-center flex-col gap-7 w-full relative mx-auto z-10">
-        <div class="c-section__header">
-          <h1 class="text-white">Change the way you
-            think about tax compliance.</h1>
 
-        </div>
-        <a href="#" class="c-button bg-white hover:bg-blue-50 active:bg-blue-200 font-medium text-black">Get
-          6 months free</a>
-      </div>
-    </section>
-    <section id="testmonials__section" class="bg-white">
-      <div class="w-fit mx-auto">
-        <div class="c-section__header">
-          <h1 class="text-slate-900">Never worry about your taxes again</h1>
-          <p class="text-slate-600">
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
-            mission-critical features.
-          </p>
-        </div>
-        <div class="w-full grid items-center justify-center gap-8 md:grid-cols-2">
-          <div class="c-testimonials__section__card__wrapper">
-            <svg aria-hidden="true" width="105" height="78">
-              <path
-                d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
-              </path>
-            </svg>
-            <div class="c-testimonials__section__card__wrapper__main-content">
-              <div class="c-testimonials__section__card__blockquote">
-                <p>
-                  TaxPro is so easy to use I can’t help but wonder if it’s
-                  really doing the things the government expects me to do.
-                </p>
-              </div>
-              <div class="c-testimonials__section__card__info">
-                <div>
-                  <h3>Sheryl Berge</h3>
-                  <p>CEO at Lynch LLC</p>
-                </div>
-                <div>
-                  <div class="c-testimonials__section__card__img">
-                    <img src="assets/testimonials/avatar-1.webp" class="object-fit" />
-                  </div>
-                </div>
+          <div class="col-lg-4">
+            <div class="card mb-4 text-white">
+              <div class="card-body " style="background-color: rgb(63, 147, 68);">
+                <h1 class="mb-4" style="color: #fff;">€15</h1>
+                <h3 class="mb-3" style=" font-weight: 600;">Small Business</h3>
+                <p class="mb-4 text-center" style="color: #fff; font-weight: 600;">Perfect for small/medium-sized
+                  businesses.</p>
+                <a href="#" class="btn-more" style="background-color: #fff; color: rgb(63, 147, 68);">Select plan</a>
+                <ul class="mt-4 text-left list-unstyled">
+                  <li><i class=" bi bi-check-circle"></i> Send 25 quotes and invoices</li>
+                  <li><i class="bi bi-check-circle"></i> Connect up to 5 bank accounts</li>
+                  <li><i class="bi bi-check-circle"></i> Track up to 50 expenses per month</li>
+                  <li><i class="bi bi-check-circle"></i> Automated payroll support</li>
+                  <li><i class="bi bi-check-circle"></i> Export up to 12 reports</li>
+                  <li><i class="bi bi-check-circle"></i> Bulk reconcile transactions</li>
+                  <li><i class="bi bi-check-circle"></i> Track in multiple currencies</li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="c-testimonials__section__card__wrapper">
-            <svg aria-hidden="true" width="105" height="78">
-              <path
-                d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
-              </path>
-            </svg>
-            <div class="c-testimonials__section__card__wrapper__main-content">
-              <div class="c-testimonials__section__card__blockquote">
-                <p>
-                  I’m trying to get a hold of someone in support, I’m in a lot
-                  of trouble right now and they are saying it has something to
-                  do with my books. Please get back to me right away.
-                </p>
-              </div>
-              <div class="c-testimonials__section__card__info">
-                <div>
-                  <h3>Amy Hahn</h3>
-                  <p>Director at Velocity Industries</p>
-                </div>
-                <div>
-                  <div class="c-testimonials__section__card__img">
-                    <img src="assets/testimonials/avatar-2.webp" class="object-fit" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="c-testimonials__section__card__wrapper">
-            <svg aria-hidden="true" width="105" height="78">
-              <path
-                d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
-              </path>
-            </svg>
-            <div class="c-testimonials__section__card__wrapper__main-content">
-              <div class="c-testimonials__section__card__blockquote">
-                <p>
-                  The best part about TaxPro is every time I pay my employees,
-                  my bank balance doesn’t go down like it used to. Looking
-                  forward to spending this extra cash when I figure out why my
-                  card is being declined.
-                </p>
-              </div>
-              <div class="c-testimonials__section__card__info">
-                <div>
-                  <h3>Leland Kiehn</h3>
-                  <p>Founder of Kiehn and Sons</p>
-                </div>
-                <div>
-                  <div class="c-testimonials__section__card__img">
-                    <img src="assets/testimonials/avatar-3.webp" class="object-fit" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="c-testimonials__section__card__wrapper">
-            <svg aria-hidden="true" width="105" height="78">
-              <path
-                d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
-              </path>
-            </svg>
-            <div class="c-testimonials__section__card__wrapper__main-content">
-              <div class="c-testimonials__section__card__blockquote">
-                <p>
-                  There are so many things I had to do with my old software
-                  that I just don’t do at all with TaxPro. Suspicious but I
-                  can’t say I don’t love it.
-                </p>
-              </div>
-              <div class="c-testimonials__section__card__info">
-                <div>
-                  <h3>Erin Powlowski</h3>
-                  <p>COO at Armstrong Inc</p>
-                </div>
-                <div>
-                  <div class="c-testimonials__section__card__img">
-                    <img src="assets/testimonials/avatar-4.webp" class="object-fit" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="c-testimonials__section__card__wrapper">
-            <svg aria-hidden="true" width="105" height="78">
-              <path
-                d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
-              </path>
-            </svg>
-            <div class="c-testimonials__section__card__wrapper__main-content">
-              <div class="c-testimonials__section__card__blockquote">
-                <p>
-                  I used to have to remit tax to the EU and with TaxPro I
-                  somehow don’t have to do that anymore. Nervous to travel
-                  there now though.
-                </p>
-              </div>
-              <div class="c-testimonials__section__card__info">
-                <div>
-                  <h3>Peter Renolds</h3>
-                  <p>Founder of West Inc</p>
-                </div>
-                <div>
-                  <div class="c-testimonials__section__card__img">
-                    <img src="assets/testimonials/avatar-5.webp" class="object-fit" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="c-testimonials__section__card__wrapper">
-            <svg aria-hidden="true" width="105" height="78">
-              <path
-                d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
-              </path>
-            </svg>
-            <div class="c-testimonials__section__card__wrapper__main-content">
-              <div class="c-testimonials__section__card__blockquote">
-                <p>
-                  This is the fourth email I’ve sent to your support team. I
-                  am literally being held in jail for tax fraud. Please answer
-                  your damn emails, this is important.
-                </p>
-              </div>
-              <div class="c-testimonials__section__card__info">
-                <div>
-                  <h3>Amy Hahn</h3>
-                  <p>Director at Velocity Industries</p>
-                </div>
-                <div>
-                  <div class="c-testimonials__section__card__img">
-                    <img src="assets/testimonials/avatar-2.webp" class="object-fit" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="pricing__section" class="bg-slate-900">
-      <div class="w-fit mx-auto">
-        <div class="c-section__header">
-          <h1 class="text-white">Affordable and transparent.</h1>
-          <p class="text-slate-100">
-            Deliver the best possible mobility experience for your employees, at a fraction of the cost.
-          </p>
-        </div>
-        <div class="w-full grid justify-items-center grid-cols-1 lg:grid-cols-3 grid-flow-row-dense gap-8">
-          <div class="c-pricing__section__price-card__wrapper">
-            <div class="c-pricing__section__price-card__wrapper__main-content">
-              <h1>€9</h1>
-              <h3>Starter</h3>
-              <p>
-                Good for anyone who is self-employed and just getting started.
-              </p>
-            </div>
-            <a class="c-button text-white border border-slate-50/30" href="#">Get Started</a>
-            <ul>
-              <li>
-                <svg aria-hidden="true">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Send 10 quotes and invoices</span>
-              </li>
-              <li>
-                <svg aria-hidden="true">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Connect up to 2 bank accounts</span>
-              </li>
-              <li>
-                <svg aria-hidden="true">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Track up to 15 expenses per month</span>
-              </li>
-              <li>
-                <svg aria-hidden="true">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Manual payroll support</span>
-              </li>
-              <li>
-                <svg aria-hidden="true">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Export up to 3 reports</span>
-              </li>
-            </ul>
-          </div>
-          <div class="c-pricing__section__price-card__wrapper bg-blue-600">
-            <div class="c-pricing__section__price-card__wrapper__main-content">
-              <h1>€15</h1>
-              <h3>Small business</h3>
-              <p style="color: white">
-                Perfect for small / medium sized businesses.
-              </p>
-            </div>
-            <a class="c-button text-slate-800 bg-white font-medium" href="#">Get Started</a>
-            <ul>
-              <li>
-                <svg aria-hidden="true" class="h-6 w-6 flex-none fill-current stroke-current text-white">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Send 25 quotes and invoices</span>
-              </li>
-              <li>
-                <svg aria-hidden="true" class="h-6 w-6 flex-none fill-current stroke-current text-white">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Connect up to 5 bank accounts</span>
-              </li>
-              <li>
-                <svg aria-hidden="true" class="h-6 w-6 flex-none fill-current stroke-current text-white">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Track up to 50 expenses per month</span>
-              </li>
-              <li>
-                <svg aria-hidden="true" class="h-6 w-6 flex-none fill-current stroke-current text-white">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Automated payroll support</span>
-              </li>
-              <li>
-                <svg aria-hidden="true" class="h-6 w-6 flex-none fill-current stroke-current text-white">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Export up to 12 reports</span>
-              </li>
-              <li>
-                <svg aria-hidden="true" class="h-6 w-6 flex-none fill-current stroke-current text-white">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Bulk reconcile transactions</span>
-              </li>
-              <li>
-                <svg aria-hidden="true" class="h-6 w-6 flex-none fill-current stroke-current text-white">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Track in multiple currencies</span>
-              </li>
-            </ul>
-          </div>
-          <div class="c-pricing__section__price-card__wrapper">
-            <div class="c-pricing__section__price-card__wrapper__main-content">
-              <h1>€39</h1>
-              <h3>Enterprise</h3>
-              <p>For even the biggest enterprise companies.</p>
-            </div>
-            <a class="c-button text-white border border-slate-50/30" href="#">Get Started</a>
-            <ul>
-              <li>
-                <svg aria-hidden="true">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Send unlimited quotes and invoices</span>
-              </li>
-              <li>
-                <svg aria-hidden="true">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Connect up to 15 bank accounts</span>
-              </li>
-              <li>
-                <svg aria-hidden="true">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Track up to 200 expenses per month</span>
-              </li>
-              <li>
-                <svg aria-hidden="true">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Automated payroll support</span>
-              </li>
-              <li>
-                <svg aria-hidden="true">
-                  <path
-                    d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
-                    stroke-width="0"></path>
-                  <circle cx="12" cy="12" r="8.25" fill="none" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round"></circle>
-                </svg>
-                <span>Export up to 25 reports, including TPS</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="faq__section" class="bg-slate-50">
-      <img alt="" src="assets/faq/background-faqs.55d2e36a.jpg" decoding="async" data-nimg="1"
-        class="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4 z-0" loading="lazy"
-        style="color: transparent" width="1558" height="946" />
-      <div class="c-section__header relative z-10">
-        <h1 class="text-slate-900">Frequently asked questions</h1>
-        <p class="text-slate-600">
-          If you can’t find what you’re looking for, email our support team
-          and if you’re lucky someone will get back to you.
-        </p>
-      </div>
-      <div
-        class="c-faq__section__main-content grid grid-cols-1 grid-flow-row gap-10 w-full h-fit max-w-7xl mx-auto relative z-10 md:grid-cols-3 md:grid-rows-1">
-        <ul>
-          <li>
-            <h3>Does TaxPro handle VAT?</h3>
-            <p>
-              Well no, but if you move your company offshore you can probably
-              ignore it.
-            </p>
-          </li>
-          <li>
-            <h3>Can I pay for my subscription via purchase order?</h3>
-            <p>Absolutely, we are happy to take your money in all forms.</p>
-          </li>
-          <li>
-            <h3>How do I apply for a job at TaxPro?</h3>
-            <p>
-              We only hire our customers, so subscribe for a minimum of 6
-              months and then let’s talk.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3>What was that testimonial about tax fraud all about?</h3>
-            <p>
-              TaxPro is just a software application, ultimately your books are
-              your responsibility.
-            </p>
-          </li>
-          <li>
-            <h3>
-              TaxPro sounds horrible but why do I still feel compelled to
-              purchase?
-            </h3>
-            <p>
-              This is the power of excellent visual design. You just can’t
-              resist it, no matter how poorly it actually functions.
-            </p>
-          </li>
-          <li>
-            <h3>
-              I found other companies called TaxPro, are you sure you can use
-              this name?
-            </h3>
-            <p>
-              Honestly not sure at all. We haven’t actually incorporated or
-              anything, we just thought it sounded cool and made this website.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3>How do you generate reports?</h3>
-            <p>
-              You just tell us what data you need a report for, and we get our
-              kids to create beautiful charts for you using only the finest
-              crayons.
-            </p>
-          </li>
-          <li>
-            <h3>Can we expect more inventory features?</h3>
-            <p>In life it’s really better to never expect anything at all.</p>
-          </li>
-          <li>
-            <h3>I lost my password, how do I get into my account?</h3>
-            <p>
-              Send us an email and we will send you a copy of our latest
-              password spreadsheet so you can find your information.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <footer class="bg-slate-50 px-8 pb-10 pt-24 md:px-10">
-      <div class="c-flex-center flex-col gap-24 w-full md:gap-32">
-        <div class="c-flex-items-center flex-col gap-10 w-fit">
-          <a href="#">
-            <img src="./assets/logo.png" alt="Logo" width="120rem" height="70rem">
-          </a>
-          <div class="hidden md:block">
-            <ul class="c-flex-items-center list-none gap-x-8 lg:gap-x-10">
-              <li>
-                <a class="c-button--hover" href="#primary-features__section">Features</a>
-              </li>
-              <li>
-                <a class="c-button--hover" href="#testmonials__section">Testimonials</a>
-              </li>
-              <li>
-                <a class="c-button--hover" href="#pricing__section">Pricing</a>
-              </li>
-              <li>
-                <a class="c-button--hover" href="#">Contact us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="c-flex-items-center justify-center gap-8 flex-wrap w-full md:justify-between">
-          <p class="text-sm text-slate-500 md:text-base">
-            Copyright © 2024 TaxPro. All rights reserved.
-          </p>
-          <div class="c-flex-center gap-7">
-            <a class="group" href="https://twitter.com" target="_blank"><svg aria-hidden="true"
-                class="h-6 w-6 fill-slate-500 group-hover:fill-slate-700">
-                <path
-                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0 0 22 5.92a8.19 8.19 0 0 1-2.357.646 4.118 4.118 0 0 0 1.804-2.27 8.224 8.224 0 0 1-2.605.996 4.107 4.107 0 0 0-6.993 3.743 11.65 11.65 0 0 1-8.457-4.287 4.106 4.106 0 0 0 1.27 5.477A4.073 4.073 0 0 1 2.8 9.713v.052a4.105 4.105 0 0 0 3.292 4.022 4.093 4.093 0 0 1-1.853.07 4.108 4.108 0 0 0 3.834 2.85A8.233 8.233 0 0 1 2 18.407a11.615 11.615 0 0 0 6.29 1.84" />
-              </svg>
-            </a>
 
-            <a class="group" href="https://www.facebook.com/" target="_blank"><svg aria-hidden="true"
-                class="h-6 w-6 fill-slate-500 group-hover:fill-slate-700">
-                <path
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
-              </svg>
-            </a>
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h1 class="mb-4">€39</h1>
+                <h3 class="mb-3" style=" font-weight: 600;">Enterprise</h3>
+                <p class="mb-4 text-center" style="color: #001524;">For even the biggest enterprise companies.
+                </p>
+                <a href="#" class="btn-more">Select plan</a>
+                <ul class="mt-4 text-left list-unstyled">
+                  <li><i class="bi bi-check-circle"></i> Send unlimited quotes and invoices</li>
+                  <li><i class="bi bi-check-circle"></i> Connect up to 15 bank accounts</li>
+                  <li><i class="bi bi-check-circle"></i> Track up to 200 expenses per month</li>
+                  <li><i class="bi bi-check-circle"></i> Automated payroll support</li>
+                  <li><i class="bi bi-check-circle"></i> Export up to 25 reports, including TPS</li>
+                </ul>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="get-app text-center text-white py-5" ">
+      <div class=" container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <h2 class="mb-4">Would you like additional professional advice?</h2>
+          <p class="lead mb-4">Book an appointment with one of our partner tax advisors.</p>
+          <a href="#" class="btn-book">Book a Service</a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <footer class="pt-4 mt-4">
+      <div class="container">
+        <div class=" text-center">
+          <img src="assets/logo.png" alt="Logo" class="img-fluid" style="max-width: 100px;">
+        </div>
+        <div class="row mt-3 align-items-center">
+          <div class="col-md-6 text-center mb-4 ">
+            <ul class="list-unstyled mb-0 d-flex gap-3 justify-content-center">
+              <li><a href=" #primary-features">Features</a></li>
+              <li><a href="#testmonials__section">Testimonials</a></li>
+              <li><a href="#pricing__section">Pricing</a></li>
+              <li><a href="https://www.facebook.com/">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-center mb-4">
+            <div class="d-flex justify-content-center">
+              <a href="https://twitter.com" target="_blank" class="mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#154618" class="bi bi-twitter"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 3.428a6.46 6.46 0 0 1-1.828.506 3.258 3.258 0 0 0 1.435-1.805 6.517 6.517 0 0 1-2.073.784 3.258 3.258 0 0 0-5.542 2.973 9.258 9.258 0 0 1-6.73-3.415 3.258 3.258 0 0 0 1.007 4.344 3.237 3.237 0 0 1-1.478-.407v.04c0 1.712 1.226 3.14 2.85 3.463a3.279 3.279 0 0 1-1.474.056 3.258 3.258 0 0 0 3.043 2.262A6.537 6.537 0 0 1 1 12.46a9.212 9.212 0 0 0 5 1.456c6.317 0 9.784-5.234 9.784-9.784 0-.149-.004-.297-.009-.445A6.987 6.987 0 0 0 16 3.428z" />
+                </svg>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" class="mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#154618" class="bi bi-facebook"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
+              </a>
+              <a href="https://www.google.com/" target="_blank" class="mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#154618" class="bi bi-envelope-at"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />
+                  <path
+                    d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <p class="text-center mt-3" style="font-size: small;">Copyright © 2024 TaxPro. All rights reserved.</p>
         </div>
       </div>
     </footer>
   </main>
-</body>
-<!-- Custom JavaScript for closing navbar on link click -->
-<script>
-  function closeNavbar() {
-    if (window.innerWidth <= 992) {
-      // Close navbar when a link is clicked on smaller screens
-      var navbarToggler = document.querySelector('.navbar-toggler');
-      if (navbarToggler.getAttribute('aria-expanded') === 'true') {
-        navbarToggler.click(); // Simulate toggler click to close navbar
+
+  <!-- Custom JavaScript for closing navbar on link click -->
+  <script>
+    function closeNavbar() {
+      if (window.innerWidth <= 992) {
+        // Close navbar when a link is clicked on smaller screens
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        if (navbarToggler.getAttribute('aria-expanded') === 'true') {
+          navbarToggler.click(); // Simulate toggler click to close navbar
+        }
       }
     }
-  }
-</script>
+  </script>
+
+</body>
+
+
+
 
 </html>

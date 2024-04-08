@@ -1,17 +1,17 @@
 const primaryFeaturesDesktopTabs = document.querySelector(
-  ".c-primary-features__section__tabs"
+  ".c-primary-features_tabs"
 );
 const primaryFeaturesMobileTabs = document.querySelector(
-  ".c-primary-features__section__list-items"
+  ".c-primary-features_list-items"
 );
 const primaryFeaturesListItems = document.querySelector(
-  ".c-primary-features__section__list-items ul"
+  ".c-primary-features_list-items ul"
 );
 const primaryFeaturesListItemSubtitle = document.querySelector(
-  ".c-primary-features__section__list-items p"
+  ".c-primary-features_list-items p"
 );
 const primaryFeaturesImg = document.querySelector(
-  ".c-primary-features__section__img__wrapper img"
+  ".c-primary-features_img__wrapper img"
 );
 const secondaryFeaturesTabs = document.querySelector(
   ".c-secondary-features__section__tabs"
@@ -81,38 +81,16 @@ primaryFeaturesListItems.addEventListener("click", (e) => {
 });
 
 primaryFeaturesDesktopTabs.addEventListener("click", (e) => {
-  if (e.target.closest(".c-primary-features__section__tab-wrapper")) {
+  if (e.target.closest(".c-primary-features_tab-wrapper")) {
     [...primaryFeaturesDesktopTabs.children].forEach((item) => {
       item.classList.remove("c-active");
     });
     const dataIndex = Number(
-      e.target.closest(".c-primary-features__section__tab-wrapper").dataset
-        .index
+      e.target.closest(".c-primary-features_tab-wrapper").dataset.index
     );
     primaryFeaturesImg.src = featuresPrimaryData.img[dataIndex];
     e.target
-      .closest(".c-primary-features__section__tab-wrapper")
+      .closest(".c-primary-features_tab-wrapper")
       .classList.add("c-active");
   }
 });
-
-secondaryFeaturesTabs.addEventListener("click", (e) => {
-  if (e.target.closest(".c-secondary-features__section__tab__wrapper")) {
-    [...secondaryFeaturesTabs.children].forEach((item) => {
-      item.classList.remove("c-active");
-    });
-    const dataPosition = Number(
-      e.target.closest(".c-secondary-features__section__tab__wrapper").dataset
-        .position
-    );
-    secondaryFeaturesImgsContainer.firstElementChild.style.transform = `translateX(${
-      -52.75 * dataPosition
-    }rem)`;
-    e.target
-      .closest(".c-secondary-features__section__tab__wrapper")
-      .classList.add("c-active");
-  }
-});
-
-
-
